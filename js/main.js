@@ -14,8 +14,15 @@ window.fetch('checklist.md')
       var checkbox = element.childNodes[0].childNodes[0];
       checkbox.removeAttribute('disabled');
     }
+
     var links = document.querySelectorAll('a');
-    for(var i=0; i<links.length; i++){
+    for (var i = 0; i < links.length; i++) {
       links[i].setAttribute('target', '_blank');
     }
   });
+
+document.getElementById('tweet').onclick = function() {
+  var readiness = (document.querySelectorAll('input:checked') / document.querySelectorAll('input')) * 100;
+  var link = 'https://twitter.com/share?text=I\'m '+ readiness + '%25 ready for Ben Week. How ready are you? ';
+  window.open(link);
+};
