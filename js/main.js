@@ -22,7 +22,7 @@ window.fetch('checklist.md')
   });
 
 document.getElementById('tweet').onclick = function() {
-  var readiness = (document.querySelectorAll('input:checked') / document.querySelectorAll('input')) * 100;
+  var readiness = (document.querySelectorAll('input:checked').length / document.querySelectorAll('input').length) * 100;
   var link = 'https://twitter.com/share?text=I\'m '+ readiness + '%25 ready for Ben Week. How ready are you? ';
   window.open(link);
 };
