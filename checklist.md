@@ -6,3 +6,4 @@
  - [ ] Wearing sunglasses
  - [ ] Eating burritos for every meal
  - [ ] Have a beard
+ - [ ] Totally say the word "totally" a lot
