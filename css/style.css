@@ -1,0 +1,60 @@
+h1 {
+    font-size: 4em;
+    margin: 20px 0 0 0;
+}
+h2 {
+    font-size: 3em;
+    margin: 10px 0 50px 0;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: Helvetica,sans-serif;
+    -webit-font-smoothing: antialiased;
+    font-weight: 100;
+    text-shadow: #ddd 0 0 2px;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+#logo {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    right: 0;
+    -webkit-transform: translate(124px,-40px) rotate(32deg);
+    -ms-transform: translate(124px,-40px) rotate(32deg);
+    transform: translate(124px,-40px) rotate(32deg);
+    transition: all .2s;
+    cursor: none;
+}
+
+#logo:hover {
+    -webkit-transform: rotate(-18deg) scale(1.7);
+    -ms-transform: rotate(-18deg) scale(1.7);
+    transform: rotate(-18deg) scale(1.7);
+}
+
+#banner {
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 a {
+    color: red;
+    text-decoration: none;
+    border-bottom: 10px solid blue;
+}
+
+#checklist {
+    font-size: 2.5em;
+}
+
+#checklist input[type=checkbox] {
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    margin-right: 15px !important;
+}
