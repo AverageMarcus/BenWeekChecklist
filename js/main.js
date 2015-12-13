@@ -13,6 +13,9 @@ window.fetch('checklist.md')
       element.innerHTML = '<label>' + element.innerHTML + '</label>';
       var checkbox = element.childNodes[0].childNodes[0];
       checkbox.removeAttribute('disabled');
-
+    }
+    var links = document.querySelectorAll('a');
+    for(var i=0; i<links.length; i++){
+      links[i].setAttribute('target', '_blank');
     }
   });
