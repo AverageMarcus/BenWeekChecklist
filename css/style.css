@@ -15,6 +15,7 @@ body {
     font-weight: 100;
     text-shadow: #ddd 0 0 2px;
     margin: 0;
+    margin-bottom: 200px;
     padding: 20px 40px;
 }
 
@@ -37,7 +38,7 @@ body {
 }
 
 #banner {
-    position:absolute;
+    position:fixed;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
